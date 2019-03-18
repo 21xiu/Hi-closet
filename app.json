@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/types/types",
+    "pages/upload/upload"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#85929E",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Hi,衣橱"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "衣橱",
+        "iconPath": "/image/index70.png",
+        "selectedIconPath": "/image/index70.png"
+      },
+      {
+        "pagePath": "pages/upload/upload",
+        "text": "上传",
+        "iconPath": "/image/upload70.png",
+        "selectedIconPath": "/image/upload70.png"
+      }
+    ]
+  },
+  "debug": false
+}
