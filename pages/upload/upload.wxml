@@ -1,2 +1,30 @@
 <!--pages/upload/upload.wxml-->
-<text>pages/upload/upload.wxml</text>
+<view class="container">
+    <form bindsubmit="bindSave">
+    <view class="form-box">
+        <view class="row-wrap">
+            <view class="label">名称</view>
+            <view class="label-right">
+                <input name="amount" class="input" type="text" placeholder="请输入名称"/>
+            </view>
+        </view>
+        <view class="row-wrap">
+            <view class="label">类型</view>
+            <view class="label-right">
+                <Select prop-array='{{selectArray}}'></Select>
+            </view>
+        </view>
+        <view class="row-wrap">
+            <view class="label">具体描述</view>
+            <view class="label-right">
+                <input name="amount" class="input" type="text" placeholder="选填"/>
+            </view>
+        </view>
+    </view>
+    <button style="margin:30rpx;" bindtap="chooseimage">获取图片</button>  
+<image src="{{tempFilePaths }}" mode="aspecFill" style="width: 100%; height:500rpx"/> 
+    <button type="warn" class="save-btn" formType="submit">上传</button>
+    </form>
+    
+</view>
+
