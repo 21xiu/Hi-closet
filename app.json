@@ -6,8 +6,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#85929E",
-    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Hi,衣橱"
   },
   "tabBar": {

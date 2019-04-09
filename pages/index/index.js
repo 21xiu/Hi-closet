@@ -63,6 +63,7 @@ Page({
   //点击某一个title条
   changeType:function(e){
     var type = e.currentTarget.dataset.value
+    
     if(type == this.data.currentType){
       return;
     }
@@ -77,11 +78,52 @@ Page({
   },
   gotoAlbum:function(e){
     let param = e.currentTarget.dataset, title = param.title, id=param.id
-    var url = "../album/album?title="+title+"&id="+id.replace(".","##");
-    wx.navigateTo({url:url})
+    //var url = "../album/album?title="+title+"&id="+id.replace(".","##");
+    //wx.navigateTo({url:url})
+     
+
   },
+
   data: {
-    contentList:[],
+
+    contentList:[
+      {
+        tp:'shirt',
+        link: 1,
+        img: "/image/1.jpg",
+        title:1,
+        isshow:true
+      },
+      {
+        tp: 'skirt',
+        link: 2,
+        img: "/image/2.jpg",
+        title: 1,
+        isshow: true
+      },
+      {
+        tp: 'ornament',
+        link: 3,
+        img: "/image/3.jpg",
+        title: 1,
+        isshow: true
+      },
+      {
+        tp: 'skirt',
+        link: 4,
+        img: "/image/4.png",
+        title: 1,
+        isshow: true
+      },
+      {
+        tp: 'skirt',
+        link: 5,
+        img: "/image/4.png",
+        title: 1,
+        isshow: true
+      },
+      
+    ],
     currentType:wx.getStorageSync('currentType'), 
     types:wx.getStorageSync('types') ? wx.getStorageSync('types') : app.globalData.types
   }
